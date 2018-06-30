@@ -16,7 +16,7 @@ s = socket.socket(socket.AF_LORA, socket.SOCK_RAW)
 s.setblocking(False)
 
 # send some data
-s.send(bytes([0x01, 0x02, 0x03])
+s.send(bytes([0x01, 0x02, 0x03]))
 
 # get any data received...
 data = s.recv(64)
